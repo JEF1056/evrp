@@ -30,8 +30,8 @@ function App() {
               <TileLayer
                 url={
                   process.env.NODE_ENV === "development"
-                    ? "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-                    : "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=ef50a344-931b-4eef-98e5-8c000faab8b6"
+                    ? "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+                    : "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=ef50a344-931b-4eef-98e5-8c000faab8b6"
                 }
               />
 

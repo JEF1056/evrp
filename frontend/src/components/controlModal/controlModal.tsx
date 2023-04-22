@@ -42,7 +42,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
             <div className="flex flex-row items-center gap-2">
               <SearchBar />
               <Button
-                className="btn-square"
+                className="btn-square bg-primary"
                 onClick={
                   props.fullScreenHandle.active
                     ? props.fullScreenHandle.exit

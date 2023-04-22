@@ -23,6 +23,16 @@ export interface historicalVehicleData {
   previous?: vehicleData;
 }
 
+export interface bathroomData {
+  latitude: number;
+  longitude: number;
+}
+
+export interface restaurantData {
+  latitude: number;
+  longitude: number;
+}
+
 export interface chargerData {
   latitude: number;
   longitude: number;

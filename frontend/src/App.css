@@ -1,0 +1,16 @@
+.full-height-map {
+    height: 100vh;
+}
+
+.leaflet-tile-container img {
+    width: 257px !important;
+    height: 257px !important;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}

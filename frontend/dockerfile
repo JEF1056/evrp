@@ -1,0 +1,8 @@
+FROM node:16.19
+WORKDIR /usr/src/app
+RUN npm install --global serve
+COPY package*.json .
+RUN npm install
+COPY . .
+RUN npm run build
+CMD ["serve", "-s", "build"]

@@ -1,0 +1,1382 @@
+[
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 60.7983283996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 0,
+            "isEcuSpeed": true,
+            "latitude": 34.03590398,
+            "longitude": -118.710580759,
+            "reverseGeo": "3800 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 0,
+            "timestamp": 1681103374
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 60.7983283996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 0,
+            "isEcuSpeed": true,
+            "latitude": 34.03590398,
+            "longitude": -118.710580759,
+            "reverseGeo": "3800 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 0,
+            "timestamp": 1681103374
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 60.7983283996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 0,
+            "isEcuSpeed": true,
+            "latitude": 34.03590398,
+            "longitude": -118.710580759,
+            "reverseGeo": "3800 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 0,
+            "timestamp": 1681103374
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 60.7983283996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 0,
+            "isEcuSpeed": true,
+            "latitude": 34.035905909,
+            "longitude": -118.71058103,
+            "reverseGeo": "3800 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 0,
+            "timestamp": 1681103420
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 60.7983283996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 131.5,
+            "isEcuSpeed": true,
+            "latitude": 34.0358871,
+            "longitude": -118.71055746,
+            "reverseGeo": "3800 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 12.428,
+            "timestamp": 1681103427.009
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 55.08696746826172,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 129.5,
+            "isEcuSpeed": true,
+            "latitude": 34.035538029,
+            "longitude": -118.71007717,
+            "reverseGeo": "3865 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 23.614,
+            "timestamp": 1681103433.005
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 55.08696746826172,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 129.5,
+            "isEcuSpeed": true,
+            "latitude": 34.035538029,
+            "longitude": -118.71007717,
+            "reverseGeo": "3865 Malibu Country Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 23.614,
+            "timestamp": 1681103433.005
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 51.1406364440918,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 182,
+            "isEcuSpeed": true,
+            "latitude": 34.03473368,
+            "longitude": -118.7100856,
+            "reverseGeo": "John Tyler Drive, Malibu, CA, 90263",
+            "speedMilesPerHour": 25.478,
+            "timestamp": 1681103444.006
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 50.04545593261719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 190.5,
+            "isEcuSpeed": true,
+            "latitude": 34.03432415,
+            "longitude": -118.710102509,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 14.914,
+            "timestamp": 1681103449.009
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 50.04545593261719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 190.5,
+            "isEcuSpeed": true,
+            "latitude": 34.03432415,
+            "longitude": -118.710102509,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 14.914,
+            "timestamp": 1681103449.009
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 49.51726150512695,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 264,
+            "isEcuSpeed": true,
+            "latitude": 34.03421715,
+            "longitude": -118.71102502,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 35.421,
+            "timestamp": 1681103455.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 47.35125732421875,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 265.1,
+            "isEcuSpeed": true,
+            "latitude": 34.03413852,
+            "longitude": -118.712086679,
+            "reverseGeo": "24654 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 47.849,
+            "timestamp": 1681103460.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 43.06543731689453,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 80000,
+            "headingDegrees": 265.2,
+            "isEcuSpeed": true,
+            "latitude": 34.034027589,
+            "longitude": -118.71360622,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 54.685,
+            "timestamp": 1681103465.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 42.86430358886719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79583,
+            "headingDegrees": 265.6,
+            "isEcuSpeed": true,
+            "latitude": 34.033943809,
+            "longitude": -118.71497637,
+            "reverseGeo": "24855 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 57.171,
+            "timestamp": 1681103471.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 45.625606536865234,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79583,
+            "headingDegrees": 272,
+            "isEcuSpeed": true,
+            "latitude": 34.0339299,
+            "longitude": -118.71639401,
+            "reverseGeo": "24855 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 58.414,
+            "timestamp": 1681103475.997
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 48.151832580566406,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79583,
+            "headingDegrees": 272,
+            "isEcuSpeed": true,
+            "latitude": 34.03396603,
+            "longitude": -118.71784144,
+            "reverseGeo": "24855 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103481.288
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 51.45157241821289,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79583,
+            "headingDegrees": 272.5,
+            "isEcuSpeed": true,
+            "latitude": 34.03403835,
+            "longitude": -118.71964353,
+            "reverseGeo": "25059 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103487.005
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 54.052330017089844,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79583,
+            "headingDegrees": 271.8,
+            "isEcuSpeed": true,
+            "latitude": 34.03407439,
+            "longitude": -118.72125246,
+            "reverseGeo": "24998 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103493.192
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 57.499183654785156,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 275.1,
+            "isEcuSpeed": true,
+            "latitude": 34.03418331,
+            "longitude": -118.72275571,
+            "reverseGeo": "24941 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103498.212
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 57.499183654785156,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 275.1,
+            "isEcuSpeed": true,
+            "latitude": 34.03418331,
+            "longitude": -118.72275571,
+            "reverseGeo": "24941 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103498.212
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 51.01511764526367,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 272.3,
+            "isEcuSpeed": true,
+            "latitude": 34.034192509,
+            "longitude": -118.72446442,
+            "reverseGeo": "24907 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103504.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 38.56027603149414,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 260.799,
+            "isEcuSpeed": true,
+            "latitude": 34.034057779,
+            "longitude": -118.72738894,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103514.008
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 38.56027603149414,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 260.799,
+            "isEcuSpeed": true,
+            "latitude": 34.034057779,
+            "longitude": -118.72738894,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103514.008
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 28.663637161254883,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 261.799,
+            "isEcuSpeed": true,
+            "latitude": 34.03384604,
+            "longitude": -118.72911158,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103520.005
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 19.2154483795166,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 260.7,
+            "isEcuSpeed": true,
+            "latitude": 34.03362103,
+            "longitude": -118.73083127,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103525.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 10.713139533996582,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 263.2,
+            "isEcuSpeed": true,
+            "latitude": 34.03345475,
+            "longitude": -118.732274259,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103531.081
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 5.785452365875244,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 273.7,
+            "isEcuSpeed": true,
+            "latitude": 34.03347399,
+            "longitude": -118.73399487,
+            "reverseGeo": "Corral Canyon Trail, Malibu, CA, 90263",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103536.998
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 6.067632675170898,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 272.9,
+            "isEcuSpeed": true,
+            "latitude": 34.033545599,
+            "longitude": -118.735469199,
+            "reverseGeo": "25801 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103542.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 8.657004356384277,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 270.6,
+            "isEcuSpeed": true,
+            "latitude": 34.03359031,
+            "longitude": -118.73688765,
+            "reverseGeo": "25801 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103547.015
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 12.526312828063965,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 266.2,
+            "isEcuSpeed": true,
+            "latitude": 34.033516089,
+            "longitude": -118.73863111,
+            "reverseGeo": "25801 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103553.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 12.582273483276367,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 266.5,
+            "isEcuSpeed": true,
+            "latitude": 34.033458409,
+            "longitude": -118.740081259,
+            "reverseGeo": "26095 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103558.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 12.582273483276367,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 266.5,
+            "isEcuSpeed": true,
+            "latitude": 34.033458409,
+            "longitude": -118.740081259,
+            "reverseGeo": "26095 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103558.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 11.423455238342285,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 265.7,
+            "isEcuSpeed": true,
+            "latitude": 34.0333601,
+            "longitude": -118.74179807,
+            "reverseGeo": "26032 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103564.154
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 10.210441589355469,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 256.799,
+            "isEcuSpeed": true,
+            "latitude": 34.03311618,
+            "longitude": -118.7435332,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103570
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 10.376498222351074,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 253.1,
+            "isEcuSpeed": true,
+            "latitude": 34.032742849,
+            "longitude": -118.74494707,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103575
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 11.106966972351074,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 255,
+            "isEcuSpeed": true,
+            "latitude": 34.03234349,
+            "longitude": -118.74675047,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103581
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 12.738061904907227,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 248.7,
+            "isEcuSpeed": true,
+            "latitude": 34.03189533,
+            "longitude": -118.74827755,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103587.003
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 14.428380012512207,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 247.9,
+            "isEcuSpeed": true,
+            "latitude": 34.03145472,
+            "longitude": -118.74962721,
+            "reverseGeo": "26699 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103592.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 17.622764587402344,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 79166,
+            "headingDegrees": 252.3,
+            "isEcuSpeed": true,
+            "latitude": 34.03102981,
+            "longitude": -118.75092527,
+            "reverseGeo": "26683 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103596.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 23.369966506958008,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 256.5,
+            "isEcuSpeed": true,
+            "latitude": 34.03073618,
+            "longitude": -118.75232683,
+            "reverseGeo": "26651 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103602.137
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.00845718383789,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 250.9,
+            "isEcuSpeed": true,
+            "latitude": 34.03033332,
+            "longitude": -118.754009179,
+            "reverseGeo": "26613 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103608.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.00845718383789,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 250.9,
+            "isEcuSpeed": true,
+            "latitude": 34.03033332,
+            "longitude": -118.754009179,
+            "reverseGeo": "26613 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103608.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 39.72402572631836,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 243.8,
+            "isEcuSpeed": true,
+            "latitude": 34.029729119,
+            "longitude": -118.755610919,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103614.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 42.73466491699219,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 234.7,
+            "isEcuSpeed": true,
+            "latitude": 34.028971599,
+            "longitude": -118.757070979,
+            "reverseGeo": "26831 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103619.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 42.168033599853516,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 234.7,
+            "isEcuSpeed": true,
+            "latitude": 34.02828714,
+            "longitude": -118.75824102,
+            "reverseGeo": "26701 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103624.997
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 38.60243606567383,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 238.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02764225,
+            "longitude": -118.75947866,
+            "reverseGeo": "27285 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103630.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 33.09727096557617,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 244.4,
+            "isEcuSpeed": true,
+            "latitude": 34.02696383,
+            "longitude": -118.76099687,
+            "reverseGeo": "27165 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103635.998
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 24.87120819091797,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 250.9,
+            "isEcuSpeed": true,
+            "latitude": 34.026513289,
+            "longitude": -118.76236381,
+            "reverseGeo": "27059 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103640.996
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 13.973888397216797,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 249.6,
+            "isEcuSpeed": true,
+            "latitude": 34.026060439,
+            "longitude": -118.7637194,
+            "reverseGeo": "26957 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103646.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 6.905273914337158,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 262.3,
+            "isEcuSpeed": true,
+            "latitude": 34.02588979,
+            "longitude": -118.76515759,
+            "reverseGeo": "26851 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103651.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 8.668678283691406,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 267.3,
+            "isEcuSpeed": true,
+            "latitude": 34.02577198,
+            "longitude": -118.76687008,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 58.414,
+            "timestamp": 1681103657.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 16.338970184326172,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 268.3,
+            "isEcuSpeed": true,
+            "latitude": 34.025737619,
+            "longitude": -118.76829444,
+            "reverseGeo": "27353 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 58.414,
+            "timestamp": 1681103662.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 25.79305076599121,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 268.3,
+            "isEcuSpeed": true,
+            "latitude": 34.02570535,
+            "longitude": -118.77005302,
+            "reverseGeo": "27303 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103667.998
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.193355560302734,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 267,
+            "isEcuSpeed": true,
+            "latitude": 34.025645769,
+            "longitude": -118.771484279,
+            "reverseGeo": "27357 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103672.996
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.193355560302734,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78750,
+            "headingDegrees": 267,
+            "isEcuSpeed": true,
+            "latitude": 34.025645769,
+            "longitude": -118.771484279,
+            "reverseGeo": "27357 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103672.996
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 32.61568832397461,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 274.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02571137,
+            "longitude": -118.773188329,
+            "reverseGeo": "27469 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103678.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 32.28361892700195,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 274.8,
+            "isEcuSpeed": true,
+            "latitude": 34.02581782,
+            "longitude": -118.77458907,
+            "reverseGeo": "27589 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103684
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 32.73581314086914,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 276,
+            "isEcuSpeed": true,
+            "latitude": 34.026042369,
+            "longitude": -118.777539559,
+            "reverseGeo": "27727 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103694.008
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 32.73581314086914,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 276,
+            "isEcuSpeed": true,
+            "latitude": 34.026042369,
+            "longitude": -118.777539559,
+            "reverseGeo": "27727 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103694.008
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 35.9249267578125,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 265.2,
+            "isEcuSpeed": true,
+            "latitude": 34.025995559,
+            "longitude": -118.77924917,
+            "reverseGeo": "27713 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103699.996
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 38.9827766418457,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 78333,
+            "headingDegrees": 256.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02578957,
+            "longitude": -118.78069422,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103705.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 41.31855773925781,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 253,
+            "isEcuSpeed": true,
+            "latitude": 34.02545824,
+            "longitude": -118.782083899,
+            "reverseGeo": "27927 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103709.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 41.868682861328125,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 253.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02508307,
+            "longitude": -118.78345431,
+            "reverseGeo": "27998 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103715
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 37.976070404052734,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 252.7,
+            "isEcuSpeed": true,
+            "latitude": 34.02466388,
+            "longitude": -118.785116169,
+            "reverseGeo": "28159 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103721.131
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.815635681152344,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 250.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02427088,
+            "longitude": -118.78653453,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103725.997
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 31.03895378112793,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 243.7,
+            "isEcuSpeed": true,
+            "latitude": 34.023777269,
+            "longitude": -118.78780947,
+            "reverseGeo": "28211 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103731.001
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 34.66240310668945,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 240.9,
+            "isEcuSpeed": true,
+            "latitude": 34.02309889,
+            "longitude": -118.78934098,
+            "reverseGeo": "28393 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103736.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 37.30791091918945,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 243.6,
+            "isEcuSpeed": true,
+            "latitude": 34.02256846,
+            "longitude": -118.790597509,
+            "reverseGeo": "28383 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103742.007
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 36.55953598022461,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 241.8,
+            "isEcuSpeed": true,
+            "latitude": 34.021909139,
+            "longitude": -118.79218736,
+            "reverseGeo": "28588 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103747.997
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 36.052215576171875,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 241.9,
+            "isEcuSpeed": true,
+            "latitude": 34.02135757,
+            "longitude": -118.79347794,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103753.012
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 36.052215576171875,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 241.9,
+            "isEcuSpeed": true,
+            "latitude": 34.02135757,
+            "longitude": -118.79347794,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103753.012
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 37.66470718383789,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 253.7,
+            "isEcuSpeed": true,
+            "latitude": 34.02077381,
+            "longitude": -118.7950991,
+            "reverseGeo": "28841 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103759.204
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 39.14498519897461,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77916,
+            "headingDegrees": 261.299,
+            "isEcuSpeed": true,
+            "latitude": 34.020530569,
+            "longitude": -118.7965198,
+            "reverseGeo": "28709 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103764.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 41.86035919189453,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 272.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02052013,
+            "longitude": -118.79820626,
+            "reverseGeo": "28791 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103769.996
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 44.32270431518555,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 282.1,
+            "isEcuSpeed": true,
+            "latitude": 34.020743369,
+            "longitude": -118.79962916,
+            "reverseGeo": "Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.035,
+            "timestamp": 1681103775
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 46.97922897338867,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 289.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02121953,
+            "longitude": -118.80123146,
+            "reverseGeo": "6400 Zuma Mesa Drive, Malibu, CA, 90265",
+            "speedMilesPerHour": 59.656,
+            "timestamp": 1681103780.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 51.748661041259766,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 288.8,
+            "isEcuSpeed": true,
+            "latitude": 34.021663119,
+            "longitude": -118.80282336,
+            "reverseGeo": "29090 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 53.442,
+            "timestamp": 1681103787.004
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 55.73450469970703,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 289.2,
+            "isEcuSpeed": true,
+            "latitude": 34.02199446,
+            "longitude": -118.80405224,
+            "reverseGeo": "29019 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 37.907,
+            "timestamp": 1681103792.998
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 55.73450469970703,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 289.2,
+            "isEcuSpeed": true,
+            "latitude": 34.02199446,
+            "longitude": -118.80405224,
+            "reverseGeo": "29019 Pacific Coast Highway, Malibu, CA, 90265",
+            "speedMilesPerHour": 37.907,
+            "timestamp": 1681103792.998
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 57.554893493652344,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 347.2,
+            "isEcuSpeed": true,
+            "latitude": 34.02222162,
+            "longitude": -118.80456061,
+            "reverseGeo": "6499 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 10.564,
+            "timestamp": 1681103798.997
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 58.031131744384766,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 33.9,
+            "isEcuSpeed": true,
+            "latitude": 34.02239439,
+            "longitude": -118.80446172,
+            "reverseGeo": "6499 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 13.671,
+            "timestamp": 1681103804.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.06791687011719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 66.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02261242,
+            "longitude": -118.80423323,
+            "reverseGeo": "6493 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 9.943,
+            "timestamp": 1681103809.099
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 63.07030487060547,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 30,
+            "isEcuSpeed": true,
+            "latitude": 34.022705939,
+            "longitude": -118.80417423,
+            "reverseGeo": "6491 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 2.486,
+            "timestamp": 1681103814.999
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.06791687011719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 210.7,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80422607,
+            "reverseGeo": "6493 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 1.864,
+            "timestamp": 1681103820.002
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.06791687011719,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 38.5,
+            "isEcuSpeed": true,
+            "latitude": 34.02264617,
+            "longitude": -118.80417023,
+            "reverseGeo": "6491 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103826.032
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "On",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "Off",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 95.1,
+            "isEcuSpeed": true,
+            "latitude": 34.02267487,
+            "longitude": -118.80409656,
+            "reverseGeo": "6478 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0.621,
+            "timestamp": 1681103832
+        }
+    ],
+    [
+        {
+            "ambientAirTemperatureMilliC": 23000,
+            "elevation": 62.6878662109375,
+            "engineStates": "Off",
+            "evStateOfChargeMilliPercent": 77500,
+            "headingDegrees": 0,
+            "isEcuSpeed": true,
+            "latitude": 34.02264435,
+            "longitude": -118.80409693,
+            "reverseGeo": "6480 Cavalleri Road, Malibu, CA, 90265",
+            "speedMilesPerHour": 0,
+            "timestamp": 1681103854.996
+        }
+    ]
+]

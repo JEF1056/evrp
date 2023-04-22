@@ -1,0 +1,7 @@
+requests
+Flask
+gunicorn
+flask-cors
+py3dep
+geopy
+ciso8601

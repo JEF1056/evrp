@@ -8,6 +8,7 @@ import VehiclePathComponent from "./components/vehiclePath";
 import EvStationsComponent from "./components/evStations";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import SettingsDrawerComponent from "./components/settingsDrawer/settingsDrawer";
+import LoadingScreen from "./components/loadingScreen";
 
 function App() {
   console.log(process.env.NODE_ENV);

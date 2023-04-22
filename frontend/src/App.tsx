@@ -3,7 +3,7 @@ import "./App.css";
 import "./leaflet/leaflet.css";
 import Vehicle from "./components/vehicle";
 import StatsModalComponent from "./components/statsModal/statsModal";
-import ControlModalComponent from "./components/controlModal";
+import ControlModalComponent from "./components/controlModal/controlModal";
 import VehiclePathComponent from "./components/vehiclePath";
 import EvStationsComponent from "./components/evStations";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";

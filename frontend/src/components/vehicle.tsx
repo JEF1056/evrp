@@ -108,10 +108,6 @@ function VehicleComponent() {
     function getAlerts() {
       const options = {
         method: "POST",
-        headers: {
-          accept: "application/json",
-          authorization: "Bearer samsara_api_mgw61Muh7RFxmTAkvhIDZb1QgqmU4Y",
-        },
         body: JSON.stringify(getLastSeenUuids()),
       };
 

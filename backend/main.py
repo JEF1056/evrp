@@ -5,6 +5,7 @@ import py3dep
 import ciso8601
 import sys
 import json
+from env import *
  
 # Flask constructor takes the name of
 # current module (__name__) as argument.
@@ -23,7 +24,7 @@ def get_stats(base_url, decorations=None, vehicleId=None):
     
     headers = {
         "accept": "application/json",
-        "authorization": "Bearer samsara_api_mgw61Muh7RFxmTAkvhIDZb1QgqmU4Y"
+        "authorization": "Bearer " + samsara_api_key
     }
     
     after = request.get_json(silent=True)

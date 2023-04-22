@@ -1,4 +1,4 @@
-import { vehicleInfoState } from "../../utils/atoms";
+import { showSettingsDrawerState, vehicleInfoState } from "../../utils/atoms";
 import { useRecoilState } from "recoil";
 import { Card, Countdown, Select, Progress, Button } from "react-daisyui";
 import { centerVehicleState, pathTypeState } from "../../utils/atoms";
@@ -15,7 +15,6 @@ import { clearFrames } from "../../utils/tripFrameStorage";
 import { getAvgEfficiency } from "../../utils/computeStatistics";
 import { FullScreenHandle } from "react-full-screen";
 import SearchBar from "./searchBar";
-import ChargeSpeedPicker from "./chargeSpeedPicker";
 
 interface ControlModalComponentProps {
   fullScreenHandle: FullScreenHandle;
@@ -25,6 +24,9 @@ function ControlModalComponent(props: ControlModalComponentProps) {
   const [pathYypeState, setPathTypeState] = useRecoilState(pathTypeState);
   const [vehicleInfo, setVehicleInfo] = useRecoilState(vehicleInfoState);
   const [centerVehicle, setCenterVehicle] = useRecoilState(centerVehicleState);
+  const [showSettingsDrawer, setShowSettingsDrawer] = useRecoilState(
+    showSettingsDrawerState
+  );
 
   const avgEfficiency = getAvgEfficiency();
 
@@ -79,7 +81,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
 
               <Button
                 className="btn-square"
-                onClick={() => setCenterVehicle(!centerVehicle)}
+                onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
               >
                 <FontAwesomeIcon icon={faGear} />
               </Button>
@@ -121,8 +123,6 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 <span className="pl-1">mi</span>
               </div>
             </div>
-
-            <ChargeSpeedPicker />
           </div>
         </Card.Body>
       </Card>

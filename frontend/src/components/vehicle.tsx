@@ -115,7 +115,7 @@ function VehicleComponent() {
         .then((response) => response.json())
         .then((response: responseType) => {
           test = [...test, response];
-          console.log(test);
+          //   console.log(test);
 
           if (response.data.length > 1) {
             console.log(response);

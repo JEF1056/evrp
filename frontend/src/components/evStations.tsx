@@ -3,6 +3,8 @@ import { centerVehicleState } from "../utils/atoms";
 import { useRecoilValue } from "recoil";
 import { useEffect, useState } from "react";
 import { chargerData, connectorData } from "../utils/types";
+import { mapMaxChargerSpeedState } from "../utils/atoms";
+import { useRecoilState } from "recoil";
 
 import { Icon } from "leaflet";
 import chargerSlowSvg from "../icons/charger-slow.svg";
@@ -27,14 +29,11 @@ const chargerRapidIcon = new Icon({
   iconAnchor: [10, 20],
 });
 
-interface EvStationsProps {
-  minKw: number;
-}
-
-function EvStationsComponent(props: EvStationsProps) {
+function EvStationsComponent() {
   const centerVehicle = useRecoilValue(centerVehicleState);
   const [mapCenter, setMapCenter] = useState();
   const [evStations, setEvStations] = useState<chargerData[]>();
+  const maxSpeed = useRecoilValue(mapMaxChargerSpeedState);
 
   const map = useMap();
 
@@ -56,7 +55,7 @@ function EvStationsComponent(props: EvStationsProps) {
         countrySet: "US",
         topLeft: `${bounds.getNorthWest().lat},${bounds.getNorthWest().lng}`,
         btmRight: `${bounds.getSouthEast().lat},${bounds.getSouthEast().lng}`,
-        minPowerKW: props.minKw.toString(),
+        minPowerKW: maxSpeed.toString(),
         key: "6CyE7TqPGbhqdig0YIOxKcnwpSoI88PW",
       });
 
@@ -98,7 +97,7 @@ function EvStationsComponent(props: EvStationsProps) {
           } else if (avgConnectorKw >= 125) {
             icon = chargerRapidIcon;
           } else {
-            console.log(avgConnectorKw)
+            console.log(avgConnectorKw);
             console.log("Error: No icon found for connector");
           }
 

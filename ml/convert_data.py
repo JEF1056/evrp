@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 final = []
 
-for file in os.listdir("ev-router/src/dataset"):
-    for trip in json.load(open(os.path.join("ev-router/src/dataset", file), "r")):
+for file in os.listdir("frontend/src/dataset"):
+    for trip in json.load(open(os.path.join("frontend/src/dataset", file), "r")):
         evConsumedEnergyKiloWhSinceLastFrame = None
         counter = 0
         for entry in trip:

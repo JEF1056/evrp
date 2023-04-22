@@ -7,6 +7,7 @@ import ControlModalComponent from "./components/controlModal/controlModal";
 import VehiclePathComponent from "./components/vehiclePath";
 import EvStationsComponent from "./components/evStations";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import LoadingScreen from "./components/loadingScreen";
 
 function App() {
   console.log(process.env.NODE_ENV);

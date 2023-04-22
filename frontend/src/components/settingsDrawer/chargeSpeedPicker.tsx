@@ -6,7 +6,7 @@ function ChargeSpeedPicker() {
   const [maxSpeed, setMaxSpeed] = useRecoilState(mapMaxChargerSpeedState);
 
   const speeds = [0, 50, 125, 250, 350];
-  const step = Math.ceil(100 / (speeds.length-1));
+  const step = Math.ceil(100 / (speeds.length - 1));
 
   return (
     <div className="flex flex-row items-center gap-2 w-full">
@@ -16,9 +16,9 @@ function ChargeSpeedPicker() {
           size="sm"
           step={step}
           onChange={(event) => {
-            console.log(event.target.value)
             setMaxSpeed(speeds[parseInt(event.target.value) / step]);
           }}
+          value={speeds.indexOf(maxSpeed) * step}
         />
       </div>
     </div>

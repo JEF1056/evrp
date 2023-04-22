@@ -14,9 +14,10 @@ import {
   getLastSeenUuids,
 } from "../utils/tripFrameStorage";
 import { getPreciseDistance, getRhumbLineBearing } from "geolib";
-import { vehicleData } from "../utils/types";
+import { feedResponseType, vehicleData } from "../utils/types";
 import { vehicleInfoState, centerVehicleState } from "../utils/atoms";
 import { getAvgEfficiency } from "../utils/computeStatistics";
+import { dataEndpoint, vehicleAnimationSpeed } from "../utils/constants";
 
 const vehicleOnInMotionIcon = new Icon({
   iconUrl: vehicleOnInMotionSvg,
@@ -36,20 +37,7 @@ const vehicleOnStoppedIcon = new Icon({
   iconAnchor: [10, 10],
 });
 
-interface responseType {
-  data: vehicleData[];
-  after: { [key: string]: string }; //TODO: do not use any types
-}
-
-const data_endpoint =
-  process.env.NODE_ENV === "development"
-    ? `http://${window.location.hostname}:5000/feed_test?vehicleId=281474981766008`
-    : `http://${window.location.hostname}:5000/feed?vehicleId=281474981766008`;
-
-const vehicleAnimationSpeed =
-  process.env.NODE_ENV === "development" ? 250 : 5000;
-
-console.log(data_endpoint);
+console.log(dataEndpoint);
 
 var test: any[] = [];
 
@@ -111,9 +99,9 @@ function VehicleComponent() {
         body: JSON.stringify(getLastSeenUuids()),
       };
 
-      fetch(data_endpoint, options)
+      fetch(dataEndpoint, options)
         .then((response) => response.json())
-        .then((response: responseType) => {
+        .then((response: feedResponseType) => {
           test = [...test, response];
           //   console.log(test);
 

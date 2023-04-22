@@ -40,7 +40,7 @@ function EvStationsComponent(props: EvStationsProps) {
 
   useEffect(() => {
     if (centerVehicle === false) {
-      map.on("moveend", (event) => {
+      map.on("moveend", (event: any) => {
         if (event.sourceTarget.getCenter() !== event.target.getCenter()) {
           setMapCenter(event.target.getCenter());
         }

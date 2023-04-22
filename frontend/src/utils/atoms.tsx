@@ -21,3 +21,9 @@ export const vehicleInfoState = atom<historicalVehicleData | undefined>({
   key: "vehicleInfoState",
   default: undefined,
 });
+
+export const mapMaxChargerSpeedState = atom<number>({
+  key: "mapMaxChargerSpeedState",
+  default: 0,
+  effects_UNSTABLE: [persistAtom],
+});

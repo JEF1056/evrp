@@ -15,6 +15,7 @@ import { clearFrames } from "../../utils/tripFrameStorage";
 import { getAvgEfficiency } from "../../utils/computeStatistics";
 import { FullScreenHandle } from "react-full-screen";
 import SearchBar from "./searchBar";
+import ChargeSpeedPicker from "./chargeSpeedPicker";
 
 interface ControlModalComponentProps {
   fullScreenHandle: FullScreenHandle;
@@ -120,6 +121,8 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 <span className="pl-1">mi</span>
               </div>
             </div>
+
+            <ChargeSpeedPicker />
           </div>
         </Card.Body>
       </Card>

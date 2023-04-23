@@ -1,7 +1,7 @@
 export const feedEndpoint =
   process.env.NODE_ENV === "development"
     ? `http://${window.location.hostname}:5000/feed_test`
-    : `http://${window.location.hostname}:5000/feed`;
+    : `http://ml-1.mango-tone.ts.net:5000/feed`;
 
 export const routingEndpoint = `http://${window.location.hostname}:5000/route`;
 

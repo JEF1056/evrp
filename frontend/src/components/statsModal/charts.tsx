@@ -38,7 +38,7 @@ function StatsChartsComponent() {
           y: frame.evStateOfChargeMilliPercent / 1000,
           x: frame.timestamp,
         })),
-        borderColor: "rgba(255, 99, 132)",
+        borderColor: "#eab308",
         tension: 0.5,
       },
     ],
@@ -52,7 +52,7 @@ function StatsChartsComponent() {
           y: frame.efficiency,
           x: frame.timestamp,
         })),
-        borderColor: "rgba(255, 99, 132)",
+        borderColor: "#eab308",
         tension: 0.5,
       },
       {
@@ -61,7 +61,7 @@ function StatsChartsComponent() {
           y: frame.avgEfficiency,
           x: frame.timestamp,
         })),
-        borderColor: "rgba(0, 99, 132)",
+        borderColor: "#37CDBE",
         tension: 0.5,
       },
     ],
@@ -70,14 +70,14 @@ function StatsChartsComponent() {
   return (
     <Card
       bordered={false}
-      className="rounded-none bg-base-100 stats-vertical max-h-32 md:max-h-[22rem]"
+      className="no-scrollbar rounded-none bg-base-100 overflow-y-scroll max-h-[14rem] md:max-h-[100rem]"
     >
       <Card.Body>
-        <Scatter
+        <Scatter className="h-[14rem] overflow-y-scroll"
           options={getOptions("State of Charge (%)")}
           data={stateofChargeData}
         />
-        <Scatter
+        <Scatter className="h-[14rem] overflow-y-scroll"
           options={getOptions("Efficiency (wh/mi)", true)}
           data={efficiencyData}
         />

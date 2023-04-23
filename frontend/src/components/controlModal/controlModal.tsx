@@ -42,7 +42,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
             <div className="w-fit flex flex-row items-center gap-2">
               <SearchBar />
               <Button
-                className="btn-square bg-primary"
+                className="btn-square btn-primary"
                 onClick={
                   props.fullScreenHandle.active
                     ? props.fullScreenHandle.exit
@@ -71,7 +71,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
               </Select>
 
               <Button
-                className="btn-square"
+                className="btn-square btn-primary"
                 onClick={() => setCenterVehicle(!centerVehicle)}
               >
                 <FontAwesomeIcon
@@ -80,20 +80,20 @@ function ControlModalComponent(props: ControlModalComponentProps) {
               </Button>
 
               <Button
-                className="btn-square"
+                className="btn-square btn-primary"
                 onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
               >
                 <FontAwesomeIcon icon={faGear} />
               </Button>
-              {/* <Button
-                className="btn-square"
+              <Button
+                className="btn-square btn-primary"
                 onClick={() => {
                   setVehicleInfo(undefined);
                   clearFrames();
                 }}
               >
                 <FontAwesomeIcon icon={faBroom} />
-              </Button> */}
+              </Button>
             </div>
 
             <div className="flex flex-row items-center gap-2 w-full">

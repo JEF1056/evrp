@@ -31,7 +31,7 @@ function StatsModalComponent() {
   if (vehicleInfo !== undefined) {
     return (
       <div className="flex w-screen justify-center">
-        <div className="w-11/12 lg:w-fit absolute bottom-4 lg:right-4 py-none">
+        <div className="w-11/12 rounded-none absolute bottom-4 md:left-4 md:w-1/4">
           <Tabs
             variant="bordered"
             size="md"

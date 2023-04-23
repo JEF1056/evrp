@@ -70,7 +70,7 @@ function StatsChartsComponent() {
   return (
     <Card
       bordered={false}
-      className="rounded-none lg:w-128 max-h-60 lg:max-h-128 bg-base-100 overflow-y-scroll no-scrollbar"
+      className="rounded-none bg-base-100 stats-vertical max-h-32 md:max-h-[22rem]"
     >
       <Card.Body>
         <Scatter

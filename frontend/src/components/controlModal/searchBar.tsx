@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function SearchBar() {
   return (
-    <InputGroup className="w-full">
-      <Input placeholder="Search…" />
+    <InputGroup>
+      <Input className="w-full" placeholder="Search…" />
       <Button>
         <FontAwesomeIcon icon={faSearch} />
       </Button>

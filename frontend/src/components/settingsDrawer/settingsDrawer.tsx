@@ -4,6 +4,8 @@ import { Drawer } from "react-daisyui";
 import ChargeSpeedPicker from "./chargeSpeedPicker";
 import DestinationChargePicker from "./destinationpercentagePicker";
 import ChargePercentagePicker from "./chargePercentagePicker";
+import LoginButton from "../login";
+import LogoutButton from "../logout";
 
 interface SettingsDrawerComponentProps {
   children: React.ReactNode;
@@ -24,6 +26,7 @@ function SettingsDrawerComponent(props: SettingsDrawerComponentProps) {
           <ChargeSpeedPicker />
           <DestinationChargePicker/>
           <ChargePercentagePicker/>
+          <LogoutButton/>
         </div>
       }
       onClickOverlay={() => {

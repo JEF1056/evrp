@@ -29,6 +29,12 @@ export const mapMaxChargerSpeedState = atom<number>({
 });
 
 export const showSettingsDrawerState = atom<boolean>({
-    key: "showSettingsDrawerState",
-    default: false,
+  key: "showSettingsDrawerState",
+  default: false,
+});
+
+export const statsTabState = atom<number>({
+  key: "statsTabState",
+  default: 0,
+  effects_UNSTABLE: [persistAtom],
 });

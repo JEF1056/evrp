@@ -59,3 +59,15 @@ export interface connectorData {
   currentA: number;
   currentType: string; //TODO: make this an enum later
 }
+
+export interface routeSummary {
+  lengthInMeters: number;
+  travelTimeInSeconds: number;
+  trafficDelayInSeconds: number;
+  trafficLengthInMeters: number;
+  departureTime?: string;
+  arrivalTime?: string;
+  batteryConsumptionInkWh: number;
+  remainingChargeAtArrivalInkWh: number;
+  totalChargingTimeInSeconds: number;
+}

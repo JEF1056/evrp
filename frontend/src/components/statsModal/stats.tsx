@@ -29,7 +29,7 @@ function StatsDataComponent() {
 
   if (vehicleInfo !== undefined) {
     return (
-      <Stats className='no-scrollbar rounded-none w-full pb-1 stats-vertical max-h-32 md:max-h-[22rem]'>
+      <Stats className='no-scrollbar rounded-none w-full pb-1 stats-vertical max-h-32 md:max-h-[100rem]'>
         <Stats.Stat>
           <Stats.Stat.Item variant="title">Speed</Stats.Stat.Item>
           <Stats.Stat.Item variant="value">

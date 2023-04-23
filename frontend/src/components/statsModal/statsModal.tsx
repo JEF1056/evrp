@@ -19,7 +19,7 @@ function StatsModalComponent() {
         return <RoutesDataComponent />;
       default:
         return (
-          <Card className="rounded-none lg:w-128 max-h-60 lg:max-h-128 bg-base-100 overflow-y-scroll no-scrollbar">
+          <Card className="rounded-none bg-base-100 overflow-y-scroll no-scrollbar">
             <Card.Body>
               <Card.Title>Oops! This card wasn't found.</Card.Title>
             </Card.Body>
@@ -37,7 +37,7 @@ function StatsModalComponent() {
             size="md"
             value={tabValue}
             onChange={setTabValue}
-            className="bg-primary rounded-t-lg"
+            className="bg-primary rounded-t-lg overflow-x-scroll no-scrollbar"
           >
             <Tabs.Tab value={0}>Stats</Tabs.Tab>
             <Tabs.Tab value={1}>Charts</Tabs.Tab>

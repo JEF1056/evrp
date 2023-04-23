@@ -1,4 +1,4 @@
-import { vehicleInfoState } from "../../utils/atoms";
+import { showSettingsDrawerState, vehicleInfoState } from "../../utils/atoms";
 import { useRecoilState } from "recoil";
 import { Card, Countdown, Select, Progress, Button } from "react-daisyui";
 import { centerVehicleState, pathTypeState } from "../../utils/atoms";
@@ -15,7 +15,6 @@ import { clearFrames } from "../../utils/tripFrameStorage";
 import { getAvgEfficiency } from "../../utils/computeStatistics";
 import { FullScreenHandle } from "react-full-screen";
 import SearchBar from "./searchBar";
-import ChargeSpeedPicker from "./chargeSpeedPicker";
 
 interface ControlModalComponentProps {
   fullScreenHandle: FullScreenHandle;
@@ -25,6 +24,9 @@ function ControlModalComponent(props: ControlModalComponentProps) {
   const [pathYypeState, setPathTypeState] = useRecoilState(pathTypeState);
   const [vehicleInfo, setVehicleInfo] = useRecoilState(vehicleInfoState);
   const [centerVehicle, setCenterVehicle] = useRecoilState(centerVehicleState);
+  const [showSettingsDrawer, setShowSettingsDrawer] = useRecoilState(
+    showSettingsDrawerState
+  );
 
   const avgEfficiency = getAvgEfficiency();
 
@@ -34,13 +36,13 @@ function ControlModalComponent(props: ControlModalComponentProps) {
 
   return (
     <div className="flex w-screen justify-center lg:-justify-center">
-      <Card className="w-11/12 lg:w-fit absolute top-4 lg:right-4 bg-base-100">
+      <Card className="w-11/12 absolute top-4 bg-white md:left-4  md:w-1/4">
         <Card.Body className="px-6 py-4">
           <div className="flex flex-col items-center gap-2">
-            <div className="flex flex-row items-center gap-2">
+            <div className="w-fit flex flex-row items-center gap-2">
               <SearchBar />
               <Button
-                className="btn-square"
+                className="btn-square bg-primary"
                 onClick={
                   props.fullScreenHandle.active
                     ? props.fullScreenHandle.exit
@@ -54,7 +56,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
             </div>
 
             <div className="flex flex-row items-center gap-2">
-              <Select
+              <Select className="w-fit"
                 value={pathYypeState}
                 onChange={(event) => {
                   console.log("huh");
@@ -79,11 +81,11 @@ function ControlModalComponent(props: ControlModalComponentProps) {
 
               <Button
                 className="btn-square"
-                onClick={() => setCenterVehicle(!centerVehicle)}
+                onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
               >
                 <FontAwesomeIcon icon={faGear} />
               </Button>
-              <Button
+              {/* <Button
                 className="btn-square"
                 onClick={() => {
                   setVehicleInfo(undefined);
@@ -91,7 +93,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 }}
               >
                 <FontAwesomeIcon icon={faBroom} />
-              </Button>
+              </Button> */}
             </div>
 
             <div className="flex flex-row items-center gap-2 w-full">
@@ -121,8 +123,6 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 <span className="pl-1">mi</span>
               </div>
             </div>
-
-            <ChargeSpeedPicker />
           </div>
         </Card.Body>
       </Card>

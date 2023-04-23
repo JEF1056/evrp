@@ -18,9 +18,24 @@ export interface vehicleData {
   evStateOfChargeChanged: boolean;
 }
 
+export interface feedResponseType {
+  data: vehicleData[];
+  after: { [key: string]: string }; //TODO: do not use any types
+}
+
 export interface historicalVehicleData {
   current: vehicleData;
   previous?: vehicleData;
+}
+
+export interface bathroomData {
+  latitude: number;
+  longitude: number;
+}
+
+export interface restaurantData {
+  latitude: number;
+  longitude: number;
 }
 
 export interface chargerData {

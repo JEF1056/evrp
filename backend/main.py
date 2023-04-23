@@ -95,7 +95,7 @@ def get_stats(base_url, decorations=None, vehicleId=None):
 def route_to():
     vehicleId = request.args.get("vehicleId")
     destination = request.args.get("destination")
-    minChargeAtDestinationInkWh = request.args.get("minChargeAtDestinationInkWh", defualt = 11.55)
+    minChargeAtDestinationInkWh = request.args.get("minChargeAtDestinationInkWh", default = 11.55)
     minChargeAtChargingStopsInkWh = request.args.get("minChargeAtChargingStopsInkWh", default = 3.85)
     # chargingLevel = request.args.get("chargingLevel") # 1 or 2
 
@@ -147,8 +147,8 @@ def route_to():
                 * 77,
                 "maxChargeInkWh": 77,
                 "auxiliaryPowerInkW": 0.5,
-                "minChargeAtDestinationInkWh": 11.55,  # 15%
-                "minChargeAtChargingStopsInkWh": 3.85,  # 5%
+                "minChargeAtDestinationInkWh": minChargeAtDestinationInkWh,  # 15%
+                "minChargeAtChargingStopsInkWh": minChargeAtChargingStopsInkWh,  # 5%
                 "key": tomtom_api_key,
                 "constantSpeedConsumptionInkWhPerHundredkm": "96.5,17",
             }

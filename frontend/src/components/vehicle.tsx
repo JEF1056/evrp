@@ -22,6 +22,7 @@ import {
   vehicleAnimationSpeed,
   vehicleId,
 } from "../utils/constants";
+import L from "leaflet";
 
 const vehicleOnInMotionIcon = new Icon({
   iconUrl: vehicleOnInMotionSvg,
@@ -244,9 +245,17 @@ function VehicleComponent() {
         }
       );
     }
+    
+    L.marker([vehicleInfo.current.latitude,vehicleInfo.current.longitude]).addTo(map).on('click', function(e) {
+      window.open("https://www.google.com/maps?saddr=Current+Location&daddr="+vehicleInfo.current.latitude + "," +vehicleInfo.current.longitude, "_blank")
+    })
+      
+    // }, 1000);;
+
+    // window.open("www.google.com", "_blank")
 
     return (
-      <LeafletTrackingMarker
+      <LeafletTrackingMarker 
         icon={
           vehicleInfo.current.engineStates === "On"
             ? vehicleInfo.current.speedMilesPerHour !== undefined &&
@@ -264,12 +273,6 @@ function VehicleComponent() {
         }
         duration={vehicleAnimationSpeed * 1.2}
       >
-        <Popup>
-          SOC: {vehicleInfo.current.evStateOfChargeMilliPercent / 1000}%<br />
-          On?: {vehicleInfo.current.engineStates}
-          <br />
-          Heading: {vehicleInfo.current.headingDegrees}°
-        </Popup>
       </LeafletTrackingMarker>
     );
   }

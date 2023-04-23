@@ -31,6 +31,7 @@ export interface historicalVehicleData {
 export interface bathroomData {
   latitude: number;
   longitude: number;
+  
 }
 
 export interface restaurantData {

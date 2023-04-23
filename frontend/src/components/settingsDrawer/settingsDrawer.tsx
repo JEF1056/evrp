@@ -4,8 +4,8 @@ import { Drawer } from "react-daisyui";
 import ChargeSpeedPicker from "./chargeSpeedPicker";
 import DestinationChargePicker from "./destinationpercentagePicker";
 import ChargePercentagePicker from "./chargePercentagePicker";
-import LoginButton from "../login";
 import LogoutButton from "../logout";
+import Profile from "./profile";
 
 interface SettingsDrawerComponentProps {
   children: React.ReactNode;
@@ -19,13 +19,17 @@ function SettingsDrawerComponent(props: SettingsDrawerComponentProps) {
     <Drawer
       side={
        
-        <div className="menu mt-2 p-4 overflow-y-auto w-96 bg-base-100 text-base-content
+        <div className="w-fit h-full menu p-4 overflow-y-auto w-96 bg-base-100 text-base-content
         flex flex-col gap-10">
            <b><h1 className="mt-10 text-3xl">Configurations:</h1></b>
         <hr/>
           <ChargeSpeedPicker />
           <DestinationChargePicker/>
           <ChargePercentagePicker/>
+
+          <b><h1 className="md:mt-10 text-3xl">Profile:</h1></b>
+        <hr/>
+          <Profile />
           <LogoutButton/>
         </div>
       }

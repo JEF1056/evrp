@@ -1,5 +1,3 @@
-import { Steps } from "react-daisyui";
-
 function RoutesDataComponent() {
   let destinations = ["hi", "hello"];
   return (

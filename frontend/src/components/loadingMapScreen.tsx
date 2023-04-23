@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { feedEndpoint } from "../utils/constants";
+import { feedEndpoint, vehicleId } from "../utils/constants";
 import { feedResponseType, vehicleData } from "../utils/types";
 import { setFrame } from "../utils/tripFrameStorage";
 import { useSetRecoilState } from "recoil";
@@ -15,7 +15,11 @@ function LoadingScreen() {
       body: "{}",
     };
 
-    fetch(feedEndpoint, options)
+    const params = {
+      vehicleId: vehicleId,
+    };
+
+    fetch(feedEndpoint + "?" + new URLSearchParams(params), options)
       .then((response) => response.json())
       .then((response: feedResponseType) => {
         console.log(response);

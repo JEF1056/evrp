@@ -95,8 +95,12 @@ def get_stats(base_url, decorations=None, vehicleId=None):
 def route_to():
     vehicleId = request.args.get("vehicleId")
     destination = request.args.get("destination")
-    minChargeAtDestinationInkWh = request.args.get("minChargeAtDestinationInkWh", default = 11.55)
-    minChargeAtChargingStopsInkWh = request.args.get("minChargeAtChargingStopsInkWh", default = 3.85)
+    minChargeAtDestinationInkWh = request.args.get(
+        "minChargeAtDestinationInkWh", default=11.55
+    )
+    minChargeAtChargingStopsInkWh = request.args.get(
+        "minChargeAtChargingStopsInkWh", default=3.85
+    )
     # chargingLevel = request.args.get("chargingLevel") # 1 or 2
 
     if vehicleId == None or destination == None:

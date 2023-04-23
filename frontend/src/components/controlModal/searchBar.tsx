@@ -11,32 +11,43 @@ function SearchBar() {
   const [search, setSearch] = useState<string>("");
   const setDestination = useSetRecoilState(currentDestinationState);
 
+  const handleSearch = () => {
+    console.log("search")
+    const options = {
+      method: "GET",
+    };
+
+    const params = {
+      vehicleId: vehicleId,
+      destination: search,
+    };
+
+    fetch(routingEndpoint + "?" + new URLSearchParams(params), options)
+      .then((response) => response.json())
+      .then((response: any) => {
+        setDestination(response.routes);
+      })
+      .catch((err) => console.log(err));
+  }
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log("enter")
+    if (event.keyCode === 13) {
+      handleSearch();
+    }
+  };
+
   return (
     <InputGroup className="w-full">
       <Input
         placeholder="Search…"
         value={search}
         onChange={(event) => setSearch(event.target.value)}
+        onKeyDown={handleKeyDown}
       />
       <Button
         className="btn-primary"
-        onClick={() => {
-          const options = {
-            method: "GET",
-          };
-
-          const params = {
-            vehicleId: vehicleId,
-            destination: search,
-          };
-
-          fetch(routingEndpoint + "?" + new URLSearchParams(params), options)
-            .then((response) => response.json())
-            .then((response: any) => {
-              setDestination(response.routes);
-            })
-            .catch((err) => console.log(err));
-        }}
+        onClick={handleSearch}
       >
         <FontAwesomeIcon icon={faSearch} />
       </Button>

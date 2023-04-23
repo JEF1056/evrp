@@ -170,7 +170,6 @@ def final_process(hist):
                 evConsumedEnergyKiloWhSinceLastFrame = entry["evConsumedEnergyKiloWhSinceLastFrame"]
         
         final_postprocess.append(temp1)
-    
     return final_postprocess
 
 def update_global_data(hist):

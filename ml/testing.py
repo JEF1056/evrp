@@ -1,7 +1,7 @@
 import requests
 from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent="evee")
-location = geolocator.geocode("1639 Crenshaw Boulevard LA")
+location = geolocator.geocode("Pismo Beach")
 print(location.latitude)
 print(location.longitude)
 # #samsara
@@ -27,60 +27,67 @@ url = "".join(["https://api.tomtom.com/routing/1/calculateLongDistanceEVRoute/",
               "/json?vehicleEngineType=electric&constantSpeedConsumptionInkWhPerHundredkm=50.0%2C6.5%3A100.0%2C8.5&currentChargeInkWh=10&maxChargeInkWh=40&minChargeAtDestinationInkWh=5.2&minChargeAtChargingStopsInkWh=1.5&key=6CyE7TqPGbhqdig0YIOxKcnwpSoI88PW"])
 
 body = {
-  "chargingModes": [
-    {
-      "chargingConnections": [
+  "chargingParameters": {
+      "batteryCurve": [
         {
-          "facilityType": "Charge_380_to_480V_3_Phase_at_32A",
-          "plugType": "IEC_62196_Type_2_Outlet"
+          "stateOfChargeInkWh": 50.0,
+          "maxPowerInkW": 200
+        },
+        {
+          "stateOfChargeInkWh": 70.0,
+          "maxPowerInkW": 100
+        },
+        {
+          "stateOfChargeInkWh": 80.0,
+          "maxPowerInkW": 40
         }
       ],
-      "chargingCurve": [
+      "chargingConnectors": [
         {
-          "chargeInkWh": 6,
-          "timeToChargeInSeconds": 360
+          "currentType": "AC3",
+          "plugTypes": [
+            "IEC_62196_Type_1_Outlet",
+            "IEC_62196_Type_2_Connector_Cable_Attached",
+            "Combo_to_IEC_62196_Type_2_Base"
+          ],
+          "efficiency": 0.9,
+          "baseLoadInkW": 0.2,
+          "maxPowerInkW": 11
         },
         {
-          "chargeInkWh": 12,
-          "timeToChargeInSeconds": 720
+          "currentType": "DC",
+          "plugTypes": [
+            "IEC_62196_Type_1_Outlet",
+            "IEC_62196_Type_1_Connector_Cable_Attached",
+            "Combo_to_IEC_62196_Type_1_Base"
+          ],
+          "voltageRange": {
+            "minVoltageInV": 0,
+            "maxVoltageInV": 500
+          },
+          "efficiency": 0.9,
+          "baseLoadInkW": 0.2,
+          "maxPowerInkW": 180
         },
         {
-          "chargeInkWh": 28,
-          "timeToChargeInSeconds": 1944
-        },
-        {
-          "chargeInkWh": 40,
-          "timeToChargeInSeconds": 4680
-        }
-      ]
-    },
-    {
-      "chargingConnections": [
-        {
-          "facilityType": "Charge_200_to_240V_1_Phase_at_10A",
-          "plugType": "Standard_Household_Country_Specific"
+          "currentType": "DC",
+          "plugTypes": [
+            "IEC_62196_Type_1_Outlet",
+            "IEC_62196_Type_1_Connector_Cable_Attached",
+            "Combo_to_IEC_62196_Type_1_Base"
+          ],
+          "voltageRange": {
+            "minVoltageInV": 500,
+            "maxVoltageInV": 2000
+          },
+          "efficiency": 0.9,
+          "baseLoadInkW": 0.2
         }
       ],
-      "chargingCurve": [
-        {
-          "chargeInkWh": 6,
-          "timeToChargeInSeconds": 15624
-        },
-        {
-          "chargeInkWh": 12,
-          "timeToChargeInSeconds": 32652
-        },
-        {
-          "chargeInkWh": 28,
-          "timeToChargeInSeconds": 76248
-        },
-        {
-          "chargeInkWh": 40,
-          "timeToChargeInSeconds": 109080
-        }
-      ]
-    }
-  ]
+      "chargingTimeOffsetInSec": 60
+	}
 }
+
 response = requests.post(url, json = body)
-# print(response.json()["data"][0])
+print(response.json())
+print(response.json()["data"][0])

@@ -9,19 +9,19 @@ function ChargeSpeedPicker() {
   const step = Math.ceil(100 / (speeds.length - 1));
 
   return (
-    <div className="flex flex-row items-center gap-2 w-full">
-      <div className="flex flex-row items-center">{maxSpeed} kw</div>
-      <div className="flex flex-col w-full">
-        <Range
-          size="sm"
-          step={step}
-          onChange={(event) => {
-            setMaxSpeed(speeds[parseInt(event.target.value) / step]);
-          }}
-          value={speeds.indexOf(maxSpeed) * step}
-        />
-      </div>
+    <div>
+      <h1 className="pl-1 pb-2"><b>Charger minimum speed:</b> {maxSpeed} kW</h1>
+      <Range
+        className="range range-accent"
+        size="sm"
+        step={step}
+        onChange={(event) => {
+          setMaxSpeed(speeds[parseInt(event.target.value) / step]);
+        }}
+        value={speeds.indexOf(maxSpeed) * step}
+      />
     </div>
+
   );
 }
 

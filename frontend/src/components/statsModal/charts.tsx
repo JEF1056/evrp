@@ -61,7 +61,7 @@ function StatsChartsComponent() {
           y: frame.avgEfficiency,
           x: frame.timestamp,
         })),
-        borderColor: "#37CDBE",
+        borderColor: "#fca5a5",
         tension: 0.5,
       },
     ],

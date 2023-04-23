@@ -106,7 +106,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 %
               </div>
               <Progress
-                className="w-full progress-accent"
+                className="w-full progress-secondary"
                 max={100}
                 value={Math.round(
                   vehicleInfo.current.evStateOfChargeMilliPercent / 1000

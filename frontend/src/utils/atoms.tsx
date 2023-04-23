@@ -28,6 +28,18 @@ export const mapMaxChargerSpeedState = atom<number>({
   effects_UNSTABLE: [persistAtom],
 });
 
+export const maxChargerPercentageState = atom<number>({
+  key: "maxChargerPercentageState",
+  default: 0,
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const maxDestinationPercentageState = atom<number>({
+  key: "maxDestinationPercentageState",
+  default: 0,
+  effects_UNSTABLE: [persistAtom],
+});
+
 export const showSettingsDrawerState = atom<boolean>({
   key: "showSettingsDrawerState",
   default: false,

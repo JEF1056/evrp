@@ -9,17 +9,16 @@ function RoutesDataComponent() {
     return <>No destination entered</>;
   }
 
+  // console.log(destinations[0].legs[1].summary.chargingInformationAtEndOfLeg === undefined)
   return (
     <div className="overflow-y-auto max-h-[14rem] w-full bg-white md:max-h-[100rem]">
       <ul className="steps steps-vertical">
         {destinations.map((routeData: routeData) =>
           routeData.legs.map((routeLegData) => (
             <li data-content="" className="step step-primary">
-              [{routeLegData.summary.lengthInMeters},
+              [{routeLegData.summary.chargingInformationAtEndOfLeg === undefined ? "Destination":routeLegData.summary.chargingInformationAtEndOfLeg.chargingParkName},
+              {routeLegData.summary.lengthInMeters},
               {routeLegData.summary.travelTimeInSeconds/3600},
-              {routeLegData.summary.trafficDelayInSeconds/3600}, 
-              {routeLegData.summary.trafficLengthInMeters},
-              {(routeLegData.summary.batteryConsumptionInkWh/77) * 100},
               {(routeLegData.summary.remainingChargeAtArrivalInkWh/77) * 100},
               <button className="btn" onClick={()=> window.open("https://www.google.com/maps?saddr=Current+Location&daddr="+routeLegData.points[routeLegData.points.length - 1].latitude + "," +routeLegData.points[routeLegData.points.length - 1].longitude, "_blank")}>Button</button>]
             </li>

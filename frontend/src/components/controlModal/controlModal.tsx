@@ -1,6 +1,6 @@
 import { showSettingsDrawerState, vehicleInfoState } from "../../utils/atoms";
 import { useRecoilState } from "recoil";
-import { Card, Countdown, Select, Progress, Button } from "react-daisyui";
+import { Card, Countdown, Select, Progress, Button, Tooltip } from "react-daisyui";
 import { centerVehicleState, pathTypeState } from "../../utils/atoms";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -69,31 +69,39 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 <Select.Option value={"ELEV"}>Elevation</Select.Option>
                 <Select.Option value={"ELEVGAIN"}>Elevation Gain</Select.Option>
               </Select>
+                
+              <Tooltip message = "Center Vehicle">
+                <Button
+                  className="btn-square btn-primary"
+                  onClick={() => setCenterVehicle(!centerVehicle)}
+                >
+                  <FontAwesomeIcon
+                    icon={centerVehicle ? faMap : faLocationArrow}
+                  />
+                </Button>
+              </Tooltip>
 
-              <Button
-                className="btn-square btn-primary"
-                onClick={() => setCenterVehicle(!centerVehicle)}
-              >
-                <FontAwesomeIcon
-                  icon={centerVehicle ? faMap : faLocationArrow}
-                />
-              </Button>
+              <Tooltip message = "Settings">
+                <Button
+                  className="btn-square btn-primary"
+                  onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
+                >
+                  <FontAwesomeIcon icon={faGear} />
+                </Button>
+              </Tooltip>
 
-              <Button
-                className="btn-square btn-primary"
-                onClick={() => setShowSettingsDrawer(!showSettingsDrawer)}
-              >
-                <FontAwesomeIcon icon={faGear} />
-              </Button>
-              <Button
-                className="btn-square btn-primary"
-                onClick={() => {
-                  setVehicleInfo(undefined);
-                  clearFrames();
-                }}
-              >
-                <FontAwesomeIcon icon={faBroom} />
-              </Button>
+              <Tooltip message = "Clear Route">
+                <Button
+                  className="btn-square btn-primary"
+                  onClick={() => {
+                    setVehicleInfo(undefined);
+                    clearFrames();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faBroom} />
+                </Button>
+              </Tooltip>
+
             </div>
 
             <div className="flex flex-row items-center gap-2 w-full">

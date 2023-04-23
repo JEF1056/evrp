@@ -42,7 +42,7 @@ function StatsModalComponent() {
             <Tabs.Tab value={0}>Stats</Tabs.Tab>
             <Tabs.Tab value={1}>Charts</Tabs.Tab>
             <Tabs.Tab value={2}>Routes</Tabs.Tab>
-            <Tabs.Tab value={3}>Charging Readiness</Tabs.Tab>
+            <Tabs.Tab value={3}>Charge Readiness</Tabs.Tab>
           </Tabs>
 
           {tabComponent()}

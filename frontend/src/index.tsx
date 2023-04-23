@@ -5,13 +5,25 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { RecoilRoot } from "recoil";
+import { Auth0Provider } from "@auth0/auth0-react";
+
+
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <RecoilRoot>
+    <Auth0Provider
+    domain="dev-7vj3xg0rmczmoyxk.us.auth0.com"
+    clientId="cbqDit6FeJsBtgdHLMXoBUU5Bz00w6j0"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
     <App />
+  </Auth0Provider>
+    
   </RecoilRoot>
 );
 

@@ -4,6 +4,8 @@ import { Drawer } from "react-daisyui";
 import ChargeSpeedPicker from "./chargeSpeedPicker";
 import DestinationChargePicker from "./destinationpercentagePicker";
 import ChargePercentagePicker from "./chargePercentagePicker";
+import LoginButton from "../login";
+
 
 interface SettingsDrawerComponentProps {
   children: React.ReactNode;

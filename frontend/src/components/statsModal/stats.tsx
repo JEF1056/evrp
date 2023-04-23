@@ -25,10 +25,11 @@ function StatsDataComponent() {
   const efficiency = getEfficiency();
   const avgEfficiency = getAvgEfficiency();
   const milesTraveled = getMilesTraveled();
+  const co2SavedPerMile = milesTraveled * 303
 
   if (vehicleInfo !== undefined) {
     return (
-      <Stats className="stats-vertical w-full max-h-60 lg:pb-1 lg:stats-horizontal rounded-none no-scrollbar">
+      <Stats className="stats-vertical w-full max-h-60 max-w-3xl lg:pb-1 lg:stats-horizontal rounded-none no-scrollbar">
         <Stats.Stat>
           <Stats.Stat.Item variant="title">Speed</Stats.Stat.Item>
           <Stats.Stat.Item variant="value">
@@ -76,6 +77,13 @@ function StatsDataComponent() {
           <Stats.Stat.Item variant="title">Distance Traveled</Stats.Stat.Item>
           <Stats.Stat.Item variant="value">
             {milesTraveled.toFixed(2)} miles
+          </Stats.Stat.Item>
+        </Stats.Stat>
+
+        <Stats.Stat>
+          <Stats.Stat.Item variant="title">CO2 Saved</Stats.Stat.Item>
+          <Stats.Stat.Item variant="value">
+            {co2SavedPerMile.toFixed(2)} grams
           </Stats.Stat.Item>
         </Stats.Stat>
       </Stats>

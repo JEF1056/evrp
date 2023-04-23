@@ -41,6 +41,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
           <div className="flex flex-col items-center gap-2">
             <div className="w-fit flex flex-row items-center gap-2">
               <SearchBar />
+              <Tooltip message="Full-screen option">
               <Button
                 className="btn-square btn-primary"
                 onClick={
@@ -52,7 +53,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 <FontAwesomeIcon
                   icon={props.fullScreenHandle.active ? faMinimize : faMaximize}
                 />
-              </Button>
+              </Button></Tooltip>
             </div>
 
             <div className="flex flex-row items-center gap-2">

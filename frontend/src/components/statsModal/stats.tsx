@@ -1,4 +1,4 @@
-import { isLgScreenState, vehicleInfoState } from "../../utils/atoms";
+import { vehicleInfoState } from "../../utils/atoms";
 import { useRecoilValue } from "recoil";
 import { Stats } from "react-daisyui";
 import { getFramesInOrder } from "../../utils/tripFrameStorage";

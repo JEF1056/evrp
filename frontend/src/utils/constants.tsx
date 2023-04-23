@@ -1,7 +1,11 @@
-export const dataEndpoint =
+export const feedEndpoint =
   process.env.NODE_ENV === "development"
-    ? `http://${window.location.hostname}:5000/feed_test?vehicleId=281474981766008`
-    : `http://${window.location.hostname}:5000/feed?vehicleId=281474981766008`;
+    ? `http://${window.location.hostname}:5000/feed_test`
+    : `http://${window.location.hostname}:5000/feed`;
+
+export const routingEndpoint = `http://${window.location.hostname}:5000/route`;
+
+export const vehicleId = "281474981766008";
 
 export const vehicleAnimationSpeed =
   process.env.NODE_ENV === "development" ? 250 : 5000;

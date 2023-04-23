@@ -14,12 +14,13 @@ import { useRecoilValue } from "recoil";
 import { vehicleInfoState } from "./utils/atoms";
 import { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import DestinationPathComponent from "./components/destinationPath";
 
 function App() {
   useEffect(() => {
     console.log(process.env.NODE_ENV);
   }, []);
-  
+
   const handle = useFullScreenHandle();
   const vehicleInfo = useRecoilValue(vehicleInfoState);
   const authenticated = useAuth0().isAuthenticated
@@ -56,10 +57,11 @@ function App() {
 
                   <EvStationsComponent />
 
-                  <VehiclePathComponent />
-                  <Vehicle />
-                </MapContainer>
-              </div>
+                <VehiclePathComponent />
+                <DestinationPathComponent />
+                <Vehicle />
+              </MapContainer>
+            </div>
 
               <div className="z-1">
                 <ControlModalComponent fullScreenHandle={handle} />

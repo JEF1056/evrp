@@ -105,7 +105,7 @@ function VehiclePathComponent() {
 
         return (
           <Polyline
-            pathOptions={{ color: color }}
+            pathOptions={{ color: color, weight: 5 }}
             positions={[
               [segment.latitude, segment.longitude],
               [trip[index + 1].latitude, trip[index + 1].longitude],

@@ -17,7 +17,11 @@ import { getPreciseDistance, getRhumbLineBearing } from "geolib";
 import { feedResponseType, vehicleData } from "../utils/types";
 import { vehicleInfoState, centerVehicleState } from "../utils/atoms";
 import { getAvgEfficiency } from "../utils/computeStatistics";
-import { dataEndpoint, vehicleAnimationSpeed } from "../utils/constants";
+import {
+  feedEndpoint,
+  vehicleAnimationSpeed,
+  vehicleId,
+} from "../utils/constants";
 
 const vehicleOnInMotionIcon = new Icon({
   iconUrl: vehicleOnInMotionSvg,
@@ -37,7 +41,7 @@ const vehicleOnStoppedIcon = new Icon({
   iconAnchor: [10, 10],
 });
 
-console.log(dataEndpoint);
+console.log(feedEndpoint);
 
 var test: any[] = [];
 
@@ -99,7 +103,11 @@ function VehicleComponent() {
         body: JSON.stringify(getLastSeenUuids()),
       };
 
-      fetch(dataEndpoint, options)
+      const params = {
+        vehicleId: vehicleId,
+      };
+
+      fetch(feedEndpoint + "?" + new URLSearchParams(params), options)
         .then((response) => response.json())
         .then((response: feedResponseType) => {
           test = [...test, response];

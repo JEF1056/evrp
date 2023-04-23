@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { historicalVehicleData } from "./types";
+import { historicalVehicleData, routeData } from "./types";
 import { recoilPersist } from "recoil-persist";
 import { LatLng } from "leaflet";
 
@@ -49,4 +49,9 @@ export const statsTabState = atom<number>({
   key: "statsTabState",
   default: 0,
   effects_UNSTABLE: [persistAtom],
+});
+
+export const currentDestinationState = atom<routeData[] | undefined>({
+  key: "currentDestinationState",
+  default: undefined,
 });

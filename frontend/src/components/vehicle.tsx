@@ -42,6 +42,8 @@ const vehicleOnStoppedIcon = new Icon({
   iconAnchor: [10, 10],
 });
 
+var myIcon = L.divIcon({iconUrl: "img.png"});
+
 console.log(feedEndpoint);
 
 var test: any[] = [];
@@ -255,7 +257,7 @@ function VehicleComponent() {
     }
     layer = new L.Marker([vehicleInfo.current.latitude,vehicleInfo.current.longitude]).on('click', function(e) {
       window.open("https://www.google.com/maps?saddr=Current+Location&daddr="+vehicleInfo.current.latitude + "," +vehicleInfo.current.longitude, "_blank")
-    })
+    }).setIcon(myIcon)
     map.addLayer(layer)
 
     return (

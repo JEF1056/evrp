@@ -4,6 +4,7 @@ import { Card, Tabs } from "react-daisyui";
 import StatsDataComponent from "./stats";
 import ChartsDataComponent from "./charts";
 import RoutesDataComponent from "./routes";
+import ChargeReadinessComponent from "./chargeReadiness";
 
 function StatsModalComponent() {
   const vehicleInfo = useRecoilValue(vehicleInfoState);
@@ -17,6 +18,8 @@ function StatsModalComponent() {
         return <ChartsDataComponent />;
       case 2:
         return <RoutesDataComponent />;
+        case 3:
+          return <ChargeReadinessComponent />;
       default:
         return (
           <Card className="rounded-none bg-base-100 overflow-y-scroll no-scrollbar">

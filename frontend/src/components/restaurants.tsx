@@ -2,25 +2,25 @@ import { Marker, useMap } from "react-leaflet";
 import { centerVehicleState } from "../utils/atoms";
 import { useRecoilValue } from "recoil";
 import { useEffect, useState } from "react";
-import { bathroomData} from "../utils/types";
+import { restaurantData} from "../utils/types";
 
 import { Icon } from "leaflet";
 import restaurantSvg from "../icons/restaurant.svg";
 
-const bathroomIcon = new Icon({
+const restaurantIcon = new Icon({
   iconUrl: restaurantSvg,
   iconSize: [20, 20],
   iconAnchor: [10, 20],
 });
 
-interface BathroomProps {
+interface restaurantProps {
   minKw: number;
 }
 
-function BathroomsComponent(props: BathroomProps) {
+function RestaurantsComponent(props: restaurantProps) {
   const centerVehicle = useRecoilValue(centerVehicleState);
   const [mapCenter, setMapCenter] = useState();
-  const [bathrooms, setBathrooms] = useState<bathroomData[]>();
+  const [restaurants, setRestaurants] = useState<restaurantData[]>();
 
   const map = useMap();
 
@@ -51,14 +51,14 @@ function BathroomsComponent(props: BathroomProps) {
           .then((response) => response.json())
           .then((response: any) => {
             console.log(response);
-            var temp: bathroomData[] = response.results.map((result: any) => {
+            var temp: restaurantData[] = response.results.map((result: any) => {
               return {
                 latitude: result.position.lat,
                 longitude: result.position.lon,
               };
             });
 
-            setBathrooms(temp);
+            setRestaurants(temp);
           });
       }
     }
@@ -66,13 +66,13 @@ function BathroomsComponent(props: BathroomProps) {
 
   return (
     <>
-      {bathrooms &&
-        bathrooms.map((bathroom: bathroomData) => {
+      {restaurants &&
+        restaurants.map((restaurant: restaurantData) => {
 
           return (
             <Marker
-              position={[bathroom.latitude, bathroom.longitude]}
-              icon={bathroomIcon}
+              position={[restaurant.latitude, restaurant.longitude]}
+              icon={restaurantIcon}
             >
             </Marker>
           );
@@ -81,4 +81,4 @@ function BathroomsComponent(props: BathroomProps) {
   );
 }
 
-export default BathroomsComponent;
+export default RestaurantsComponent;

@@ -36,10 +36,10 @@ function ControlModalComponent(props: ControlModalComponentProps) {
 
   return (
     <div className="flex w-screen justify-center lg:-justify-center">
-      <Card className="w-11/12 lg:w-fit absolute top-4 lg:right-4 bg-base-100">
+      <Card className="w-11/12 absolute top-4 bg-white md:left-4  md:w-1/4">
         <Card.Body className="px-6 py-4">
           <div className="flex flex-col items-center gap-2">
-            <div className="flex flex-row items-center gap-2">
+            <div className="w-fit flex flex-row items-center gap-2">
               <SearchBar />
               <Button
                 className="btn-square bg-primary"
@@ -56,7 +56,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
             </div>
 
             <div className="flex flex-row items-center gap-2">
-              <Select
+              <Select className="w-fit"
                 value={pathYypeState}
                 onChange={(event) => {
                   console.log("huh");
@@ -85,7 +85,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
               >
                 <FontAwesomeIcon icon={faGear} />
               </Button>
-              <Button
+              {/* <Button
                 className="btn-square"
                 onClick={() => {
                   setVehicleInfo(undefined);
@@ -93,7 +93,7 @@ function ControlModalComponent(props: ControlModalComponentProps) {
                 }}
               >
                 <FontAwesomeIcon icon={faBroom} />
-              </Button>
+              </Button> */}
             </div>
 
             <div className="flex flex-row items-center gap-2 w-full">

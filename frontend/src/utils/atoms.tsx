@@ -32,3 +32,9 @@ export const showSettingsDrawerState = atom<boolean>({
     key: "showSettingsDrawerState",
     default: false,
 });
+
+
+export const isLgScreenState = atom<boolean>({
+  key: 'isLgScreenState',
+  default: window.innerWidth > 1024,
+});

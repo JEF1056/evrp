@@ -28,7 +28,7 @@ const ShowLoginPage = () => {
     <Hero className="w-screen h-screen">
       <Hero.Content className="flex-col lg:flex-row">
         <img src={"/babyelectricplug-removebg-preview.png"} alt="logo" />
-        <div className="loginPage__container__login flex flex-col justify-center items-center gap-4">
+        <div className="loginPage__container__login flex flex-col justify-center items-center gap-7">
           <h1 className="text-5xl font-bold text-center text-orange-200">EVEE</h1>
           <LoginButton />
         </div>

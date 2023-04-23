@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { dataEndpoint } from "../utils/constants";
+import { feedEndpoint } from "../utils/constants";
 import { feedResponseType, vehicleData } from "../utils/types";
 import { setFrame } from "../utils/tripFrameStorage";
 import { useSetRecoilState } from "recoil";
 import { vehicleInfoState } from "../utils/atoms";
 import LoadingScreenComponent from "./loadingScreen";
-
 
 function LoadingScreen() {
   const setVehicleInfo = useSetRecoilState(vehicleInfoState);
@@ -16,7 +15,7 @@ function LoadingScreen() {
       body: "{}",
     };
 
-    fetch(dataEndpoint, options)
+    fetch(feedEndpoint, options)
       .then((response) => response.json())
       .then((response: feedResponseType) => {
         console.log(response);
@@ -55,9 +54,7 @@ function LoadingScreen() {
     return () => {};
   }, []);
 
-  return (
-    <LoadingScreenComponent />
-  );
+  return <LoadingScreenComponent />;
 }
 
 export default LoadingScreen;

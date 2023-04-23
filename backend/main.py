@@ -91,13 +91,15 @@ def get_stats(base_url, decorations=None, vehicleId=None):
     return {"data": state, "after": after}
 
 
-@app.route("/route_to")
+@app.route("/route", methods=["GET"])
 def route_to():
     vehicleId = request.args.get("vehicleId")
-    desination = request.args.get("desination")
+    destination = request.args.get("destination")
+    minChargeAtDestinationInkWh = request.args.get("minChargeAtDestinationInkWh", defualt = 11.55)
+    minChargeAtChargingStopsInkWh = request.args.get("minChargeAtChargingStopsInkWh", default = 3.85)
     # chargingLevel = request.args.get("chargingLevel") # 1 or 2
 
-    if vehicleId == None or desination == None:
+    if vehicleId == None or destination == None:
         return "No vehicleId or desination provided", 400
 
     base_url = "https://api.samsara.com/fleet/vehicles/stats/feed"
@@ -111,85 +113,97 @@ def route_to():
 
     response = requests.get(base_url, headers=headers, params=params)
     if response.status_code == 200:
-        current_data = response.json()["data"][0]
-        curr_lat = str(current_data["gps"][0]["latitude"])
-        curr_long = str(current_data["gps"][0]["longitude"])
+        current_data = response.json()["data"][0]["gps"][0]
+        curr_lat = str(current_data["latitude"])
+        curr_long = str(current_data["longitude"])
 
-        try:
-            geolocator = Nominatim(user_agent="Evee")
-            location = geolocator.geocode(desination)
-            dest_lat = str(location.latitude)
-            dest_long = str(location.longitude)
-        except:
-            return "Could not get latLong for destination. Try again!", 500
-
-        routing_base_url = f"https://api.tomtom.com/routing/1/calculateLongDistanceEVRoute/{curr_lat}%2C{curr_long}%3A{dest_lat}%2C{dest_long}/json"
-
-        params = {
-            "routeType": "fastest",
-            "traffic": "true",
-            "avoid": "tollRoads",
-            "travelMode": "car",
-            "vehicleWeight": 2212.17,
-            "vehicleLength": 4.5847,
-            "vehicleHeight": 1.65354,
-            "vehicleWidth": 1.85166,
-            "vehicleCommercial": False,
-            "vehicleEngineType": "electric",
-            "currentChargeInkWh": (
-                current_data["decorations"]["evStateOfChargeMilliPercent"]["value"]
-                / 100000
-            )
-            * 77,
-            "maxChargeInkWh": 77,
-            "auxiliaryPowerInkW": 0.5,
-            "minChargeAtDestinationInkWh": 11.55,  # 15%
-            "minChargeAtChargingStopsInkWh": 3.85,  # 5%
-        }
-
-        body = {
-            "chargingParameters": {
-                "batteryCurve": [
-                    {"stateOfChargeInkWh": 5.0, "maxPowerInkW": 185},
-                    {"stateOfChargeInkWh": 30.0, "maxPowerInkW": 175},
-                    {"stateOfChargeInkWh": 50.0, "maxPowerInkW": 140},
-                    {"stateOfChargeInkWh": 70.0, "maxPowerInkW": 85},
-                    {"stateOfChargeInkWh": 80.0, "maxPowerInkW": 40},
-                ],
-                "chargingConnectors": [
-                    {
-                        "currentType": "AC3",
-                        "plugTypes": [
-                            "IEC_62196_Type_1_Outlet",
-                            "IEC_62196_Type_2_Connector_Cable_Attached",
-                            "Combo_to_IEC_62196_Type_2_Base",
-                        ],
-                        "efficiency": 0.9,
-                        "baseLoadInkW": 0.2,
-                        "maxPowerInkW": 11,
-                    },
-                    {
-                        "currentType": "DC",
-                        "plugTypes": [
-                            "IEC_62196_Type_1_Outlet",
-                            "IEC_62196_Type_1_Connector_Cable_Attached",
-                            "Combo_to_IEC_62196_Type_1_Base",
-                        ],
-                        "voltageRange": {"minVoltageInV": 0, "maxVoltageInV": 500},
-                        "efficiency": 0.95,
-                        "baseLoadInkW": 0.2,
-                        "maxPowerInkW": 180,
-                    },
-                ],
-                "chargingTimeOffsetInSec": 60,
-            }
-        }
-        
-        response = requests.post(routing_base_url, json=body, params=params)
+        geocode_base_url = "https://api.tomtom.com/search/2/geocode/"
+        response = requests.get(
+            geocode_base_url + destination + ".json",
+            params={"key": tomtom_api_key, "limit": 1},
+        )
         if response.status_code == 200:
-            response.json()
+            print(current_data, file=sys.stderr)
+            dest_data = response.json()["results"][0]["position"]
+            dest_lat = str(dest_data["lat"])
+            dest_long = str(dest_data["lon"])
+
+            routing_base_url = f"https://api.tomtom.com/routing/1/calculateLongDistanceEVRoute/{curr_lat}%2C{curr_long}%3A{dest_lat}%2C{dest_long}/json"
+
+            params = {
+                "routeType": "fastest",
+                "traffic": "true",
+                "avoid": "tollRoads",
+                "travelMode": "car",
+                "vehicleWeight": 2212,
+                "vehicleLength": 4.5847,
+                "vehicleHeight": 1.65354,
+                "vehicleWidth": 1.85166,
+                "vehicleEngineType": "electric",
+                "currentChargeInkWh": (
+                    current_data["decorations"]["evStateOfChargeMilliPercent"]["value"]
+                    / 100000
+                )
+                * 77,
+                "maxChargeInkWh": 77,
+                "auxiliaryPowerInkW": 0.5,
+                "minChargeAtDestinationInkWh": 11.55,  # 15%
+                "minChargeAtChargingStopsInkWh": 3.85,  # 5%
+                "key": tomtom_api_key,
+                "constantSpeedConsumptionInkWhPerHundredkm": "96.5,17",
+            }
+
+            body = {
+                "chargingParameters": {
+                    "batteryCurve": [
+                        {"stateOfChargeInkWh": 5.0, "maxPowerInkW": 185},
+                        {"stateOfChargeInkWh": 30.0, "maxPowerInkW": 175},
+                        {"stateOfChargeInkWh": 50.0, "maxPowerInkW": 140},
+                        {"stateOfChargeInkWh": 70.0, "maxPowerInkW": 85},
+                        {"stateOfChargeInkWh": 80.0, "maxPowerInkW": 40},
+                    ],
+                    "chargingConnectors": [
+                        {
+                            "currentType": "AC3",
+                            "plugTypes": [
+                                "IEC_62196_Type_1_Outlet",
+                                "IEC_62196_Type_2_Connector_Cable_Attached",
+                                "Combo_to_IEC_62196_Type_2_Base",
+                            ],
+                            "efficiency": 0.9,
+                            "baseLoadInkW": 0.2,
+                            "maxPowerInkW": 11,
+                        },
+                        {
+                            "currentType": "DC",
+                            "plugTypes": [
+                                "IEC_62196_Type_1_Outlet",
+                                "IEC_62196_Type_1_Connector_Cable_Attached",
+                                "Combo_to_IEC_62196_Type_1_Base",
+                            ],
+                            "voltageRange": {"minVoltageInV": 0, "maxVoltageInV": 500},
+                            "efficiency": 0.95,
+                            "baseLoadInkW": 0.2,
+                            "maxPowerInkW": 180,
+                        },
+                    ],
+                    "chargingTimeOffsetInSec": 60,
+                }
+            }
+
+            response = requests.post(routing_base_url, json=body, params=params)
+            if response.status_code == 200:
+                return response.json()
+            else:
+                return "Failed to get route. " + str(response.content), 500
         else:
-            return "Failed to get route. " + response.content, 500
+            return (
+                "Could not get latLong for destination. Try again! "
+                + str(response.content),
+                500,
+            )
+    else:
+        "Could not get samssara data. " + str(response.content), 500
 
 
 @app.route("/healthcheck")

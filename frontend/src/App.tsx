@@ -14,62 +14,64 @@ import { useRecoilValue } from "recoil";
 import { vehicleInfoState } from "./utils/atoms";
 import { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import DestinationPathComponent from "./components/destinationPath";
+import BathroomsComponent from "./components/bathrooms";
+import RestaurantsComponent from "./components/restaurants";
 
 function App() {
   useEffect(() => {
     console.log(process.env.NODE_ENV);
   }, []);
-  
+
   const handle = useFullScreenHandle();
   const vehicleInfo = useRecoilValue(vehicleInfoState);
-  const authenticated = useAuth0().isAuthenticated
+  const authenticated = useAuth0().isAuthenticated;
 
   return (
     <FullScreen handle={handle}>
       {authenticated === false ? (
         <ShowLoginPage />
+      ) : vehicleInfo === undefined ? (
+        <LoadingScreen />
       ) : (
-        vehicleInfo === undefined ? (
-          <LoadingScreen />
-        ) : (
-          <SettingsDrawerComponent>
-            <div className="relative">
-              <div className="relative z-0">
-                <MapContainer
-                  className="full-height-map"
-                  center={[
-                    vehicleInfo.current.latitude,
-                    vehicleInfo.current.longitude,
-                  ]}
-                  zoom={13}
-                  scrollWheelZoom={true}
-                  zoomControl={false}
-                  attributionControl={false}
-                >
-                  <TileLayer
-                    url={
-                      process.env.NODE_ENV === "development"
-                        ? "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
-                        : "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=ef50a344-931b-4eef-98e5-8c000faab8b6"
-                    }
-                  />
+        <SettingsDrawerComponent>
+          <div className="relative">
+            <div className="relative z-0">
+              <MapContainer
+                className="full-height-map"
+                center={[
+                  vehicleInfo.current.latitude,
+                  vehicleInfo.current.longitude,
+                ]}
+                zoom={13}
+                scrollWheelZoom={true}
+                zoomControl={false}
+                attributionControl={false}
+              >
+                <TileLayer
+                  url={
+                    process.env.NODE_ENV === "development"
+                      ? "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+                      : "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png?api_key=ef50a344-931b-4eef-98e5-8c000faab8b6"
+                  }
+                />
 
-                  <EvStationsComponent />
+                <EvStationsComponent />
 
-                  <VehiclePathComponent />
-                  <Vehicle />
-                </MapContainer>
-              </div>
+                <VehiclePathComponent />
+                <DestinationPathComponent />
+                <Vehicle />
 
-              <div className="z-1">
-                <ControlModalComponent fullScreenHandle={handle} />
-                <StatsModalComponent />
-              </div>
+              </MapContainer>
             </div>
-          </SettingsDrawerComponent>
-          )
-      )}
 
+            <div className="z-1">
+              <ControlModalComponent fullScreenHandle={handle} />
+              <StatsModalComponent />
+            </div>
+          </div>
+        </SettingsDrawerComponent>
+      )}
     </FullScreen>
   );
 }

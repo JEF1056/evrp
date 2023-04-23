@@ -31,6 +31,7 @@ export interface historicalVehicleData {
 export interface bathroomData {
   latitude: number;
   longitude: number;
+  
 }
 
 export interface restaurantData {
@@ -60,6 +61,11 @@ export interface connectorData {
   currentType: string; //TODO: make this an enum later
 }
 
+export interface routeData {
+  summary: routeSummary;
+  legs: routeLegData[];
+}
+
 export interface routeSummary {
   lengthInMeters: number;
   travelTimeInSeconds: number;
@@ -70,4 +76,36 @@ export interface routeSummary {
   batteryConsumptionInkWh: number;
   remainingChargeAtArrivalInkWh: number;
   totalChargingTimeInSeconds: number;
+}
+
+export interface routeLegData {
+  summary: routeLegSummary;
+  points: {
+    latitude: number;
+    longitude: number;
+  }[];
+}
+
+export interface routeLegSummary {
+  lengthInMeters: number;
+  travelTimeInSeconds: number;
+  trafficDelayInSeconds: number;
+  trafficLengthInMeters: number;
+  batteryConsumptionInkWh: number;
+  remainingChargeAtArrivalInkWh: number;
+  chargingInformationAtEndOfLeg: {
+    chargingConnectionInfo: routeLegChargingConnector;
+    targetChargeInkWh: number;
+    chargingTimeInSeconds: number;
+    chargingParkName: string;
+    chargingParkPowerInkW: number;
+  };
+}
+
+export interface routeLegChargingConnector {
+  chargingVoltageInV: number;
+  chargingCurrentInA: number;
+  chargingCurrentType: string;
+  chargingPowerInkW: number;
+  chargingPlugType: string;
 }

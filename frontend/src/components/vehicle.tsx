@@ -220,8 +220,14 @@ function VehicleComponent() {
     if (centerVehicle) {
       map.setView(
         [
-          vehicleInfo.current.latitude - (window.innerWidth < 1024 ? 0.003 : 0),
-          vehicleInfo.current.longitude,
+          vehicleInfo.current.latitude -
+            (window.innerWidth < 768
+              ? 3.5545023696682464454976303317536e-6 * window.innerHeight
+              : 0),
+          vehicleInfo.current.longitude -
+            (window.innerWidth > 768
+              ? 4.1666666666666666666666666666667e-6 * window.innerWidth
+              : 0),
         ],
         15,
         {

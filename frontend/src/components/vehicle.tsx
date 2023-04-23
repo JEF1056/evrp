@@ -45,6 +45,8 @@ const vehicleOnStoppedIcon = new Icon({
 console.log(feedEndpoint);
 
 var test: any[] = [];
+var started = false;
+var layer: L.Layer;
 
 function getEfficiency(currentEvStateOfChargeMilliPercent: number) {
   let latestFrame = getLatestFrame();
@@ -246,13 +248,15 @@ function VehicleComponent() {
       );
     }
 
-    // L.marker([vehicleInfo.current.latitude,vehicleInfo.current.longitude]).addTo(map).on('click', function(e) {
-    //   window.open("https://www.google.com/maps?saddr=Current+Location&daddr="+vehicleInfo.current.latitude + "," +vehicleInfo.current.longitude, "_blank")
-    // })
-
-    // }, 1000);;
-
-    // window.open("www.google.com", "_blank")
+    if(started){
+      map.removeLayer(layer)
+    }else{
+      started = true
+    }
+    layer = new L.Marker([vehicleInfo.current.latitude,vehicleInfo.current.longitude]).on('click', function(e) {
+      window.open("https://www.google.com/maps?saddr=Current+Location&daddr="+vehicleInfo.current.latitude + "," +vehicleInfo.current.longitude, "_blank")
+    })
+    map.addLayer(layer)
 
     return (
       <LeafletTrackingMarker

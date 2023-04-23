@@ -1,4 +1,4 @@
-import { vehicleInfoState } from "../../utils/atoms";
+import { isLgScreenState, vehicleInfoState } from "../../utils/atoms";
 import { useRecoilValue } from "recoil";
 import { Stats } from "react-daisyui";
 import { getFramesInOrder } from "../../utils/tripFrameStorage";
@@ -28,7 +28,7 @@ function StatsDataComponent() {
 
   if (vehicleInfo !== undefined) {
     return (
-      <Stats className="stats-vertical w-full max-h-60 lg:pb-1 lg:stats-horizontal rounded-none no-scrollbar">
+      <Stats className='no-scrollbar rounded-none w-full pb-1 stats-vertical max-h-32 md:max-h-[22rem]'>
         <Stats.Stat>
           <Stats.Stat.Item variant="title">Speed</Stats.Stat.Item>
           <Stats.Stat.Item variant="value">
